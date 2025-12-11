@@ -18,9 +18,6 @@ Compression=lzma
 SolidCompression=yes
 PrivilegesRequired=admin
 DisableProgramGroupPage=yes
-; jei nenaudoji ikonų, šias dvi palik kaip yra arba ištrink
-; SetupIconFile=icons\app.ico
-; WizardSmallImageFile=icons\wizard.bmp
 
 [Languages]
 Name: "lt"; MessagesFile: "compiler:Languages\Lithuanian.isl"
@@ -33,7 +30,6 @@ Source: "..\build\bin\grades.dll";        DestDir: "{app}"; Flags: ignoreversion
 Name: "{group}\Kornelija-Dambrauskaite"; Filename: "{app}\{#MyAppExeName}"
 Name: "{group}\Pašalinti {#MyAppName}"; Filename: "{uninstallexe}"
 Name: "{commondesktop}\Kornelija-Dambrauskaite"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
-; Meninis medis: Start menu: VU -> Kornelija-Dambrauskaite (DefaultGroupName tai užtikrina)
 
 [Tasks]
 Name: "desktopicon"; Description: "Sukurti nuorodą darbalaukyje"; GroupDescription: "Nuorodos:"
