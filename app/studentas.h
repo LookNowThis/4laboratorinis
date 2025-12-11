@@ -30,8 +30,8 @@ private:
     int egzaminas_;
     double galutinis_;
 
-    std::size_t id_{0};       // unikalus ID
-    std::size_t karta_{0};    // 0 = originalas, 1+ = kopijos „karta“
+    std::size_t id_{0};       
+    std::size_t karta_{0};    
 
     static inline std::size_t s_next_id_ = 1;
     static inline std::size_t s_ctor_count_ = 0;
@@ -39,7 +39,6 @@ private:
     static inline std::size_t s_copy_assign_count_ = 0;
     static inline std::size_t s_dtor_count_ = 0;
 
-    // vidinis helperis
     static void logMsg(const std::string& msg);
 
 public:
