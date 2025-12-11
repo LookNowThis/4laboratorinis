@@ -21,7 +21,7 @@ DisableProgramGroupPage=yes
 ; Panaikinta: SetupIconFile=icons\app.ico
 
 [Languages]
-Name: "lt"; MessagesFile: "compiler:Languages\Lithuanian.isl"
+Name: "en"; MessagesFile: "compiler:Default.isl"
 
 [Files]
 Source: "..\build\bin\vu_student_app.exe"; DestDir: "{app}"; Flags: ignoreversion
