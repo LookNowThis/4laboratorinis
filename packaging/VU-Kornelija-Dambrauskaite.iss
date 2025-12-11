@@ -18,23 +18,27 @@ Compression=lzma
 SolidCompression=yes
 PrivilegesRequired=admin
 DisableProgramGroupPage=yes
-; Panaikinta: SetupIconFile=icons\app.ico
+; jei nenaudoji ikonų, šias dvi palik kaip yra arba ištrink
+; SetupIconFile=icons\app.ico
+; WizardSmallImageFile=icons\wizard.bmp
 
 [Languages]
-Name: "en"; MessagesFile: "compiler:Default.isl"
+Name: "lt"; MessagesFile: "compiler:Languages\Lithuanian.isl"
 
 [Files]
 Source: "..\build\bin\vu_student_app.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\build\bin\grades.dll";        DestDir: "{app}"; Flags: ignoreversion
-; Panaikinta: Source: "icons\app.ico"; DestDir: "{app}"
 
 [Icons]
 Name: "{group}\Kornelija-Dambrauskaite"; Filename: "{app}\{#MyAppExeName}"
+Name: "{group}\Pašalinti {#MyAppName}"; Filename: "{uninstallexe}"
 Name: "{commondesktop}\Kornelija-Dambrauskaite"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
+; Meninis medis: Start menu: VU -> Kornelija-Dambrauskaite (DefaultGroupName tai užtikrina)
 
 [Tasks]
 Name: "desktopicon"; Description: "Sukurti nuorodą darbalaukyje"; GroupDescription: "Nuorodos:"
 
 [Run]
-; Jei reikia, galite paleisti priklausomybes (VC++ redist) prieš pirmą startą.
+Filename: "{app}\{#MyAppExeName}"; Description: "Paleisti programą"; Flags: nowait postinstall skipifsilent
+
 
