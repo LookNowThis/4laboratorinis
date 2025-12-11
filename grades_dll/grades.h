@@ -11,7 +11,7 @@
   #define GRADES_API
 #endif
 
-// C++ eksportas/importas; naudojame std::vector API
+// C++ eksportas/importas; std::vector API
 GRADES_API double grades_vidurkis(const std::vector<int>& v);
 GRADES_API double grades_mediana(const std::vector<int>& v);
 
