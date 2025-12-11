@@ -6,7 +6,6 @@
 #include <fstream>
 #include <sstream>
 
-// vidinis loggeris į STDERR, kad neterštų rezultatų failų
 void Studentas::logMsg(const std::string& msg) {
     std::cerr << "[RuleOfThree] " << msg << "\n";
 }
@@ -75,7 +74,6 @@ void Studentas::printRuleOfThreeStats(std::ostream& os) {
        << "Destructor:   " << s_dtor_count_ << "\n\n";
 }
 
-// DLL adapteriai: deleguoja į grades.dll
 double vidurkis(const std::vector<int>& v) {
     return grades_vidurkis(v);
 }
