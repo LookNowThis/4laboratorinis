@@ -129,21 +129,19 @@ int main() {
     int strategija;
     cin >> strategija;
 
-    // --- Rule of Three demonstracija ---
+    // Rule of Three demonstracija 
     {
         Studentas a;
         a.setVardas("Testas");
         a.setPavarde("Kopijavimas");
 
-        Studentas b = a;  // COPY CTOR – žinutė bus STDERR
+        Studentas b = a;  
         Studentas c;
-        c = a;            // COPY ASSIGN – žinutė bus STDERR
-
+        c = a;            
         std::cout << "Rule of Three test:\n";
         std::cout << b.vardas() << " " << b.pavarde() << "\n";
         std::cout << c.vardas() << " " << c.pavarde() << "\n";
 
-        // Suvestinė (į STDOUT)
         Studentas::printRuleOfThreeStats(std::cout);
     }
 
