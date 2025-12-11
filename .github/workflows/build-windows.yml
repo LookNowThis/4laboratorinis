@@ -1,4 +1,4 @@
-name: Build Windows app and setup.exe
+name: Build
 
 on:
   push:
@@ -23,6 +23,15 @@ jobs:
 
       - name: Build
         run: cmake --build build --config Release
+
+      - name: Stage outputs
+        shell: cmd
+        run: |
+          if not exist build\bin mkdir build\bin
+          if exist build\bin\Release\vu_student_app.exe copy /Y build\bin\Release\vu_student_app.exe build\bin\vu_student_app.exe
+          if exist build\bin\Release\grades.dll copy /Y build\bin\Release\grades.dll build\bin\grades.dll
+          if exist build\Release\vu_student_app.exe copy /Y build\Release\vu_student_app.exe build\bin\vu_student_app.exe
+          if exist build\Release\grades.dll copy /Y build\Release\grades.dll build\bin\grades.dll
 
       - name: Verify
         shell: cmd
