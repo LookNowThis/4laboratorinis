@@ -1,5 +1,3 @@
-# ✅ README.md (įklijuoti į failą)
-
 # VU Kornelija-Dambrauskaitė v3.0 – naudojimosi instrukcija
 
 ## Diegimas
@@ -37,27 +35,3 @@ Rezultatai bus išsaugoti kataloge `results\`:
 Programą galite pašalinti:
 - **Control Panel → Programs and Features → „VU Kornelija-Dambrauskaite“ → Uninstall**, arba  
 - **Start → VU → „Pašalinti VU Kornelija-Dambrauskaite“**.
-
-
-# ✅ Commit message (įrašyti į commit langą)
-
-Improve Lithuanian README: clarity, structure, terminology, formatting
-
-
-# ✅ Pull Request pavadinimas
-
-Improve Lithuanian README (clarity, structure, terminology)
-
-
-# ✅ Pull Request aprašymas
-
-Improved Lithuanian README:
-
-- Sutvarkyta struktūra ir formatavimas  
-- Patobulintas aiškumas ir nuoseklumas  
-- Ištaisyti stiliaus ir terminologijos netikslumai  
-- Pridėti aiškesni paaiškinimai meniu punktams  
-- Pagerintas naudojimosi instrukcijos nuoseklumas  
-
-Šie pakeitimai pagerina dokumentacijos kokybę ir vartotojo patirtį.
-
